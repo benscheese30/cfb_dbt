@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: team_postgame_details
+  - name: team_fpi_postgame_details
     description: ""
     columns:
       - name: season_year
@@ -164,7 +164,7 @@ models:
         data_type: numeric
         description: ""
 
-  - name: team_pregame_details
+  - name: team_fpi_pregame_details
     description: ""
     columns:
       - name: season_year
