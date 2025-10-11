@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: 'raw'
+    database: cfb_data  # Add this
+    schema: raw      # Add this (or whatever schema your raw data is in)
+    tables:
+      - name: json_files

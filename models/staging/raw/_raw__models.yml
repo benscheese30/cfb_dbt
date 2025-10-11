@@ -1,0 +1,456 @@
+version: 2
+
+models:
+  - name: stg_fpi__rankings
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: season_week
+        data_type: integer
+        description: ""
+
+      - name: team_name
+        data_type: text
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: fpi_rank
+        data_type: integer
+        description: ""
+
+      - name: fpi_rating
+        data_type: numeric
+        description: ""
+
+      - name: game_control_rank
+        data_type: integer
+        description: ""
+
+      - name: sor
+        data_type: integer
+        description: ""
+
+      - name: sos
+        data_type: integer
+        description: ""
+
+      - name: avg_win_probability_rank
+        data_type: integer
+        description: ""
+
+      - name: remaining_sos
+        data_type: integer
+        description: ""
+
+      - name: overall_efficiency_rating
+        data_type: numeric
+        description: ""
+
+      - name: offense_efficiency_rating
+        data_type: numeric
+        description: ""
+
+      - name: defense_efficiency_rating
+        data_type: numeric
+        description: ""
+
+      - name: special_teams_efficiency_rating
+        data_type: numeric
+        description: ""
+
+  - name: stg_spp__rankings
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: season_week
+        data_type: integer
+        description: ""
+
+      - name: team_name
+        data_type: text
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: spp_rank
+        data_type: numeric
+        description: ""
+
+      - name: spp_rating
+        data_type: numeric
+        description: ""
+
+      - name: offense_rating
+        data_type: numeric
+        description: ""
+
+      - name: defense_rating
+        data_type: numeric
+        description: ""
+
+      - name: special_teams_rating
+        data_type: numeric
+        description: ""
+  
+  - name: stg_team_details
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: team_name
+        data_type: text
+        description: ""
+
+      - name: team_abbreviation
+        data_type: text
+        description: ""
+
+      - name: school_classification
+        data_type: text
+        description: ""
+
+      - name: conference
+        data_type: text
+        description: ""
+
+      - name: conference_division
+        data_type: text
+        description: ""
+
+      - name: primary_color
+        data_type: text
+        description: ""
+
+      - name: alternate_color
+        data_type: text
+        description: ""
+
+      - name: mascot
+        data_type: text
+        description: ""
+
+      - name: logo_1
+        data_type: text
+        description: ""
+
+      - name: logo_2
+        data_type: text
+        description: ""
+
+  - name: stg_location_details
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: location_id
+        data_type: integer
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: location_name
+        data_type: text
+        description: ""
+
+      - name: capacity
+        data_type: integer
+        description: ""
+
+      - name: is_grass_field
+        data_type: boolean
+        description: ""
+
+      - name: is_dome
+        data_type: boolean
+        description: ""
+
+      - name: elevation
+        data_type: numeric
+        description: ""
+
+      - name: construction_year
+        data_type: integer
+        description: ""
+
+      - name: city
+        data_type: text
+        description: ""
+
+      - name: state
+        data_type: text
+        description: ""
+
+      - name: zip_code
+        data_type: text
+        description: ""
+
+      - name: country
+        data_type: text
+        description: ""
+
+      - name: timezone
+        data_type: text
+        description: ""
+
+      - name: latitude
+        data_type: double precision
+        description: ""
+
+      - name: longitude
+        data_type: double precision
+        description: ""
+
+  - name: stg_game_details
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: elem
+        data_type: jsonb
+        description: ""
+
+      - name: game_id
+        data_type: bigint
+        description: ""
+
+      - name: season
+        data_type: integer
+        description: ""
+
+      - name: week
+        data_type: integer
+        description: ""
+
+      - name: season_type
+        data_type: text
+        description: ""
+
+      - name: is_regular_season
+        data_type: boolean
+        description: ""
+
+      - name: kick_off_ts
+        data_type: timestamp without time zone
+        description: ""
+
+      - name: is_start_time_tbd
+        data_type: boolean
+        description: ""
+
+      - name: is_neutral_site
+        data_type: boolean
+        description: ""
+
+      - name: is_conference_game
+        data_type: boolean
+        description: ""
+
+      - name: attendance
+        data_type: integer
+        description: ""
+
+      - name: location_id
+        data_type: integer
+        description: ""
+
+      - name: location_name
+        data_type: text
+        description: ""
+
+      - name: home_team_id
+        data_type: integer
+        description: ""
+
+      - name: home_team_name
+        data_type: text
+        description: ""
+
+      - name: home_conference
+        data_type: text
+        description: ""
+
+      - name: home_classification
+        data_type: text
+        description: ""
+
+      - name: home_pregame_elo
+        data_type: numeric
+        description: ""
+
+      - name: home_postgame_elo
+        data_type: numeric
+        description: ""
+
+      - name: home_postgame_win_probability
+        data_type: numeric
+        description: ""
+
+      - name: home_points
+        data_type: integer
+        description: ""
+
+      - name: home_line_scores
+        data_type: jsonb
+        description: ""
+
+      - name: away_team_id
+        data_type: integer
+        description: ""
+
+      - name: away_team
+        data_type: text
+        description: ""
+
+      - name: away_conference
+        data_type: text
+        description: ""
+
+      - name: away_classification
+        data_type: text
+        description: ""
+
+      - name: away_pregame_elo
+        data_type: numeric
+        description: ""
+
+      - name: away_postgame_elo
+        data_type: numeric
+        description: ""
+
+      - name: away_postgame_win_probability
+        data_type: numeric
+        description: ""
+
+      - name: away_points
+        data_type: integer
+        description: ""
+
+      - name: away_line_scores
+        data_type: jsonb
+        description: ""
+
+      - name: excitement_index
+        data_type: numeric
+        description: ""
+
+      - name: is_game_completed
+        data_type: boolean
+        description: ""
+
+  - name: stg_fpi_game_metrics
+    description: "FPI game-level metrics and predictions for each team"
+    columns:
+      - name: season_year
+        data_type: integer
+        description: "Season year"
+
+      - name: week
+        data_type: character varying
+        description: "Week number of the season"
+
+      - name: game_id
+        data_type: bigint
+        description: "Unique identifier for the game"
+
+      - name: team_id
+        data_type: integer
+        description: "Unique identifier for the team"
+
+      - name: home_away
+        data_type: text
+        description: "Indicates whether the team is home or away"
+
+      - name: win_probability
+        data_type: numeric
+        description: "Team's predicted win percentage in this game at time of given BPI run"
+
+      - name: game_quality
+        data_type: numeric
+        description: "Game Quality rating"
+
+      - name: matchup_quality
+        data_type: numeric
+        description: "A measure of projected competitiveness and excitement in the game, using a 0 to 100 scale, with 100 as the most exciting"
+
+      - name: opp_season_strength_fbs_rank
+        data_type: numeric
+        description: "Opponent Season Strength FBS Rank"
+
+      - name: opp_season_strength_rating
+        data_type: numeric
+        description: "Opponent Season Strength Rating"
+
+      - name: team_adj_avg_wp
+        data_type: numeric
+        description: "Team Adjusted Average Win Percentage"
+
+      - name: team_adj_game_score
+        data_type: numeric
+        description: "Team Adjusted Game Score"
+
+      - name: team_adj_win_pct
+        data_type: numeric
+        description: "Team Adjusted Win Percentage"
+
+      - name: team_avg_wp
+        data_type: numeric
+        description: "Team Average Win Percentage"
+
+      - name: team_chance_loss
+        data_type: numeric
+        description: "Team Chance Loss percentage"
+
+      - name: team_def_eff
+        data_type: numeric
+        description: "Team Defensive Efficiency rating"
+
+      - name: team_off_eff
+        data_type: numeric
+        description: "Team Offensive Efficiency rating"
+
+      - name: team_pct_hfa
+        data_type: numeric
+        description: "Team Percentage Home Field Advantage"
+
+      - name: team_pred_pt_diff
+        data_type: numeric
+        description: "Team Predicted Point Difference"
+
+      - name: team_raw_game_score
+        data_type: numeric
+        description: "Team Raw Game Score"
+
+      - name: team_st_eff
+        data_type: numeric
+        description: "Team Special Teams Efficiency rating"
+
+      - name: team_tot_eff
+        data_type: numeric
+        description: "Team Total Efficiency rating"
+
+      - name: last_modified
+        data_type: timestamp without time zone
+        description: "Timestamp when the FPI predictions were last updated"
