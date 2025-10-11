@@ -258,3 +258,82 @@ models:
       - name: last_modified
         data_type: timestamp without time zone
         description: ""
+  
+  - name: combined_team_rankings
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: season_week
+        data_type: integer
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: fpi_rank
+        data_type: integer
+        description: ""
+
+      - name: fpi_rating
+        data_type: numeric
+        description: ""
+
+      - name: fpi_game_control_rank
+        data_type: integer
+        description: ""
+
+      - name: fpi_sor
+        data_type: integer
+        description: ""
+
+      - name: fpi_sos
+        data_type: integer
+        description: ""
+
+      - name: fpi_remaining_sos
+        data_type: integer
+        description: ""
+
+      - name: fpi_avg_win_probability_rank
+        data_type: integer
+        description: ""
+
+      - name: fpi_eff
+        data_type: numeric
+        description: ""
+
+      - name: fpi_offense_eff
+        data_type: numeric
+        description: ""
+
+      - name: fpi_defense_eff
+        data_type: numeric
+        description: ""
+
+      - name: fpi_st_eff
+        data_type: numeric
+        description: ""
+
+      - name: spp_rank
+        data_type: numeric
+        description: ""
+
+      - name: spp_rating
+        data_type: numeric
+        description: ""
+
+      - name: spp_offense_eff
+        data_type: numeric
+        description: ""
+
+      - name: spp_defense_eff
+        data_type: numeric
+        description: ""
+
+      - name: spp_st_eff
+        data_type: numeric
+        description: ""
