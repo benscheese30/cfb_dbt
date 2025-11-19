@@ -83,6 +83,7 @@ SELECT
 	, sgd.excitement_index
 	, sfgm.win_probability 
 	, sfgm.game_quality 
+	, sfgm.matchup_quality 
 	, sfgm.opp_season_strength_rating 
 	, sfgm.opp_season_strength_fbs_rank 
 	, sfgm.team_adj_avg_wp 

@@ -1,6 +1,7 @@
 SELECT
 	sfgm.season_year
-	, sfgm.season_week
+	, sfgm.season_week AS snapshot_week
+	, sgd.season_week
 	, sfgm.game_id 
 	, sfgm.game_abbr_name
 	, sfgm.team_id

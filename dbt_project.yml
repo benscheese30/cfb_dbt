@@ -35,5 +35,11 @@ models:
     staging:
       +materialized: view
       +schema: staging
+    intermediate:
+      +materialized: view
+      +schema: intermediate
     datamarts:
       +materialized: view
+    agg_models:
+      +materialized: view
+    

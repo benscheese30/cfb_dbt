@@ -1,28 +1,28 @@
 version: 2
 
 models:
-  - name: stg_fpi__rankings
-    description: ""
+  - name: stg_fpi_rankings
+    description: "Stores FPI rankings data by season and week"
     columns:
       - name: season_year
         data_type: integer
-        description: ""
+        description: "Season year"
 
       - name: season_week
         data_type: integer
-        description: ""
+        description: "Week of the season"
 
       - name: team_name
         data_type: text
-        description: ""
+        description: "Name of the team"
 
       - name: team_id
         data_type: integer
-        description: ""
+        description: "Unique identifier for the team"
 
       - name: fpi_rank
         data_type: integer
-        description: ""
+        description: "FPI rank of the team"
 
       - name: fpi_rating
         data_type: numeric

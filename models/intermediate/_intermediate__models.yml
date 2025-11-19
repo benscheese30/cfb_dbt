@@ -1,0 +1,260 @@
+version: 2
+
+models:
+  - name: team_fpi_postgame_details
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: season_week
+        data_type: integer
+        description: ""
+
+      - name: game_id
+        data_type: bigint
+        description: ""
+
+      - name: game_abbr_name
+        data_type: text
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: team_name
+        data_type: text
+        description: ""
+
+      - name: team_conference
+        data_type: text
+        description: ""
+
+      - name: team_classification
+        data_type: text
+        description: ""
+
+      - name: opp_team_id
+        data_type: integer
+        description: ""
+
+      - name: opp_team
+        data_type: text
+        description: ""
+
+      - name: opp_conference
+        data_type: text
+        description: ""
+
+      - name: opp_classification
+        data_type: text
+        description: ""
+
+      - name: is_home_game
+        data_type: boolean
+        description: ""
+
+      - name: is_regular_season
+        data_type: boolean
+        description: ""
+
+      - name: is_neutral_site
+        data_type: boolean
+        description: ""
+
+      - name: is_conference_game
+        data_type: boolean
+        description: ""
+
+      - name: is_overtime
+        data_type: boolean
+        description: ""
+
+      - name: is_win
+        data_type: boolean
+        description: ""
+
+      - name: kick_off_ts
+        data_type: timestamp without time zone
+        description: ""
+
+      - name: team_points
+        data_type: integer
+        description: ""
+
+      - name: team_line_scores
+        data_type: jsonb
+        description: ""
+
+      - name: opp_points
+        data_type: integer
+        description: ""
+
+      - name: opp_line_scores
+        data_type: jsonb
+        description: ""
+
+      - name: team_pregame_elo
+        data_type: numeric
+        description: ""
+
+      - name: team_postgame_elo
+        data_type: numeric
+        description: ""
+
+      - name: excitement_index
+        data_type: numeric
+        description: ""
+
+      - name: win_probability
+        data_type: numeric
+        description: ""
+
+      - name: game_quality
+        data_type: numeric
+        description: ""
+
+      - name: opp_season_strength_rating
+        data_type: numeric
+        description: ""
+
+      - name: opp_season_strength_fbs_rank
+        data_type: numeric
+        description: ""
+
+      - name: team_adj_avg_wp
+        data_type: numeric
+        description: ""
+
+      - name: team_adj_game_score
+        data_type: numeric
+        description: ""
+
+      - name: team_adj_win_pct
+        data_type: numeric
+        description: ""
+
+      - name: team_avg_wp
+        data_type: numeric
+        description: ""
+
+      - name: team_def_eff
+        data_type: numeric
+        description: ""
+
+      - name: team_off_eff
+        data_type: numeric
+        description: ""
+
+      - name: team_st_eff
+        data_type: numeric
+        description: ""
+
+      - name: team_tot_eff
+        data_type: numeric
+        description: ""
+
+      - name: team_pred_pt_diff
+        data_type: numeric
+        description: ""
+
+      - name: team_raw_game_score
+        data_type: numeric
+        description: ""
+
+  - name: team_fpi_pregame_details
+    description: ""
+    columns:
+      - name: season_year
+        data_type: integer
+        description: ""
+
+      - name: season_week
+        data_type: integer
+        description: ""
+
+      - name: game_id
+        data_type: bigint
+        description: ""
+
+      - name: game_abbr_name
+        data_type: text
+        description: ""
+
+      - name: team_id
+        data_type: integer
+        description: ""
+
+      - name: team_name
+        data_type: text
+        description: ""
+
+      - name: team_conference
+        data_type: text
+        description: ""
+
+      - name: team_classification
+        data_type: text
+        description: ""
+
+      - name: opp_team_id
+        data_type: integer
+        description: ""
+
+      - name: opp_team
+        data_type: text
+        description: ""
+
+      - name: opp_conference
+        data_type: text
+        description: ""
+
+      - name: opp_classification
+        data_type: text
+        description: ""
+
+      - name: is_home_game
+        data_type: boolean
+        description: ""
+
+      - name: is_regular_season
+        data_type: boolean
+        description: ""
+
+      - name: is_neutral_site
+        data_type: boolean
+        description: ""
+
+      - name: is_conference_game
+        data_type: boolean
+        description: ""
+
+      - name: kick_off_ts
+        data_type: timestamp without time zone
+        description: ""
+
+      - name: win_probability
+        data_type: numeric
+        description: ""
+
+      - name: matchup_quality
+        data_type: numeric
+        description: ""
+
+      - name: opp_season_strength_rating
+        data_type: numeric
+        description: ""
+
+      - name: opp_season_strength_fbs_rank
+        data_type: numeric
+        description: ""
+
+      - name: team_pred_pt_diff
+        data_type: numeric
+        description: ""
+
+      - name: last_modified
+        data_type: timestamp without time zone
+        description: ""
