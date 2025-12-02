@@ -17,6 +17,9 @@ WITH dts AS (
 		, tfpd.game_id 
 		, tfpd.team_conference
 		, tfpd.team_classification 
+        , tfpd.is_win
+        , tfpd.is_conference_game
+        , tfpd.is_home_game
 		, tfpd.team_points 
 		, SUM(tfpd.team_points) OVER(PARTITION BY dts.team_id ORDER BY dts.wk, game_id) AS cumulative_team_points
 		, tfpd.opp_points 
